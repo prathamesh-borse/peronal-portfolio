@@ -10,13 +10,11 @@ export const GlobalProvider = ({ children }) => {
   const [isClick, setIsClick] = useState(false);
 
   const toggleNavbar = () => {
-    setIsClick(!isClick);
-  }
+    setIsClick((prev) => !prev);
+  };
 
   return (
-    <GlobalContext.Provider
-      value={{ isClick, toggleNavbar }}
-    >
+    <GlobalContext.Provider value={{ isClick, toggleNavbar }}>
       {children}
     </GlobalContext.Provider>
   );
