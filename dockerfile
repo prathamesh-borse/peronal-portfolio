@@ -1,13 +1,20 @@
-# Stage 1: build (optional for static sites)
-FROM node:20-alpine AS builder
+# Use Node.js base image
+FROM node:20-alpine
+
+# Set working directory
 WORKDIR /app
-COPY package*.json ./
-RUN npm install --production
+
+# Copy everything into the container
 COPY . .
+
+# Install dependencies
+RUN npm install
+
+# Build the Next.js app
 RUN npm run build
 
-# Stage 2: serve
-FROM nginx:stable-alpine
-COPY --from=builder /app/public /usr/share/nginx/html
+# Expose the default Next.js port
 EXPOSE 3000
-CMD ["nginx", "-g", "daemon off;"]
+
+# Start the Next.js server
+CMD ["npm", "start"]
