@@ -1,0 +1,8 @@
+.footer {
+    background-color: rgba(43, 43, 43, 0.4);
+    /* More transparent */
+    position: relative;
+    /* Ensures stacking properly */
+    z-index: 1;
+    /* Keeps footer above particles */
+}

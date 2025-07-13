@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #212121f8;
+  --foreground: #00c2cb;
+  --bg-dark: #f5f5f5;
+  --text-color-light: #f5f5f5;
+  --text-color-dark: #000;
+  --conactMe: #00c2cb;
+  --placeholder-dark: #000;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color-light);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+a,
+p,
+.hero,
+.footerText {
+  color: var(--text-color-light);
+}
+
+.footerText {
+  margin-top: 10px;
+}
+
+.mouseIcon {
+  filter: invert();
+}
+
+/* dark mode css */
+.dark body {
+  background-color: var(--bg-dark);
+  color: var(--text-color-dark);
+}
+
+.dark .menubar {
+  color: var(--background);
+}
+
+.dark a,
+.dark p,
+.dark .hero,
+.dark .footerText {
+  color: var(--text-color-dark);
+}
+
+.dark .mediumIcon {
+  filter: invert();
+}
+
+.dark .mouseIcon {
+  filter: none;
+}
+
+.dark .contactMe {
+  color: var(--conactMe);
+}
+
+.dark .contactMeForm {
+  border: 1px solid black;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: var(--placeholder-dark);
+}
+
+.dark .footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--text-color-dark);
+}
