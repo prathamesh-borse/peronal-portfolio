@@ -46,7 +46,7 @@ const Navbar = () => {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <a href="/" className="text-white text-2xl font-bold ml-3">
-                  {"<  />"}
+                  {"< Prathamesh Borse />"}
                 </a>
               </div>
             </div>
@@ -89,7 +89,7 @@ const Navbar = () => {
                 Contact
               </a>
               <a
-                href="/assets/_Frontend_Developer_Resume.pdf"
+                href="/assets/Prathamesh_Frontend_Developer_Resume.pdf"
                 className="h-10 w-30 text-white bg-[#00C2CB] hover:bg-[#00C2CB] hover:text-white hover:opacity-70 rounded-full px-6 py-2 transition-all duration-300"
               >
                 Resume
@@ -200,7 +200,7 @@ const Navbar = () => {
               Contact
             </a>
             <a
-              href="/assets/_Frontend_Developer_Resume.pdf"
+              href="/assets/Prathamesh_Frontend_Developer_Resume.pdf"
               onClick={toggleNavbar}
               className="h-10 w-30 text-white bg-pink-600 hover:bg-[#B0413E] hover:text-white hover:opacity-70 rounded-full px-7 py-2 transition-all duration-300"
             >
