@@ -26,10 +26,6 @@ const Navbar = () => {
     }
   }, [isClick]);
 
-  // const toggleNavbar = () => {
-  //   setIsClick(!isClick);
-  // };
-
   // Toggle Dark Mode
   const toggleDarkMode = () => {
     const newMode = !darkMode;
@@ -46,7 +42,7 @@ const Navbar = () => {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <a href="/" className="text-white text-2xl font-bold ml-3">
-                  {"< Prathamesh Borse />"}
+                  {"< Prathamesh />"}
                 </a>
               </div>
             </div>
@@ -90,6 +86,7 @@ const Navbar = () => {
               </a>
               <a
                 href="/assets/Prathamesh_Frontend_Developer_Resume.pdf"
+                target="_blank"
                 className="h-10 w-30 text-white bg-[#00C2CB] hover:bg-[#00C2CB] hover:text-white hover:opacity-70 rounded-full px-6 py-2 transition-all duration-300"
               >
                 Resume

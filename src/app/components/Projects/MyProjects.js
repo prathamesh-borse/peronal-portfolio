@@ -10,7 +10,7 @@ const MyProjects = () => {
   return (
     <>
       <div ref={ref} id="projects" className="text-white min-h-screen">
-        <h3 className="text-center text-[#00c2cb] text-3xl font-semibold mt-12 mb-8">
+        <h3 className="hero text-center text-[#00c2cb] text-3xl font-semibold mt-12 mb-8">
           My Projects
         </h3>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10 text-white mr-10">
@@ -54,13 +54,11 @@ const MyProjects = () => {
                         <path d="M14 3h7v7h-2V5.41l-9.29 9.3l-1.42-1.42l9.3-9.29H14V3M5 5h7v2H5v12h12v-7h2v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" />
                       </svg>
                     </a>
-                  </div>
-                  <div className="flex items-center">
                     <a
-                      href="https://github.com/prathamesh-borse/peronal-portfolio"
+                      href="https://github.com/prathamesh-borse/peronal-portfolio`"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className=" cursor-pointer text-white p-1 rounded-full transition-all duration-300 hover:opacity-70"
+                      className="cursor-pointer text-white p-1 rounded-full transition-all duration-300 hover:opacity-70"
                     >
                       <Image
                         src="/assets/github-icon.svg"
@@ -203,9 +201,7 @@ const MyProjects = () => {
                   Developed a Gemini Chatbot using HTML, CSS, and Bootstrap 4.
                   The chatbot is designed to provide users with an interactive
                   experience, allowing them to ask questions and receive
-                  responses in real-time. The project showcases the use of
-                  responsive design principles to ensure compatibility across
-                  various devices.
+                  responses in real-time.
                 </span>
 
                 <div className="opacity-40 font-medium flex tex-white mt-8">

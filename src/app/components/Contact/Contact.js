@@ -39,7 +39,7 @@ const Contact = () => {
               Contact me now for a Free consultation.
             </p>
           </div>
-          <div className="flex flex-wrap sm:flex-row flex-col gap-4 items-center justify-center p-3">
+          <div className="hover:cursor-pointer flex flex-wrap sm:flex-row flex-col gap-4 items-center justify-center p-3">
             <div className="flex flex-wrap flex-col sm:flex-row sm:items-center sm:justify-center hover:bg-pink-600 transition-all duration-300 p-4 bg-[#00c2cb] rounded-lg items-center w-full sm:w-auto shadow-2xl gap-2">
               <Image
                 src="/assets/email-icon.svg"
