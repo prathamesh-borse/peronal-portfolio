@@ -13,7 +13,7 @@ const Contact = () => {
     }
 
     // Owner Email Address
-    const recipientEmail = "name.official@gmail.com";
+    const recipientEmail = "prathameshborse.official@gmail.com";
 
     // mailTo Link
     const mailToLink = `mailto:${recipientEmail}?subject=Contact%20Form&body=From: ${userEmail}%0D%0A%0D%0A${userMessage}`;
