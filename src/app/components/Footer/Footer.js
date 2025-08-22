@@ -7,12 +7,19 @@ import "./styles.css";
 const Footer = () => {
   return (
     <>
-      <footer className="footer w-full bg-[rgb(43,43,43)] bg-opacity-50 text-white min-h-[80px] flex items-center justify-center mt-17">
-        <div className="w-full max-w-6xl flex flex-col md:flex-row justify-between items-center">
-          <div className="footerText text-white text-2xl font-medium">
-            www.prathameshborse.com
+      <footer className="footer w-full bg-[rgb(43,43,43)] bg-opacity-50 text-white py-6 mt-10">
+        <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 px-4">
+          <div className="footerText hover:cursor-pointer text-white text-lg sm:text-xl font-medium text-center md:text-left">
+            <a
+              href="https://prathameshportfolio.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white rounded-full transition-all duration-300 hover:opacity-70"
+            >
+              www.prathameshborse.onrender.com
+            </a>
           </div>
-          <div className="flex items-center space-x-1 mt-2 mb-3">
+          <div className="flex items-center justify-center space-x-4">
             {/* GitHub */}
             <a
               href="https://github.com/prathamesh-borse"
@@ -20,7 +27,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-white rounded-full transition-all duration-300 hover:opacity-70"
             >
-              <FaGithub size={30} />
+              <FaGithub size={28} />
             </a>
 
             {/* LinkedIn */}
@@ -33,8 +40,8 @@ const Footer = () => {
               <Image
                 src="/assets/linkedin.svg"
                 alt="Linkedin Icon"
-                width={35}
-                height={30}
+                width={28}
+                height={28}
               />
             </a>
 
@@ -48,8 +55,8 @@ const Footer = () => {
               <Image
                 src="/assets/twitter-icon.webp"
                 alt="Linkedin Icon"
-                width={31}
-                height={30}
+                width={28}
+                height={28}
               />
             </a>
 
@@ -63,8 +70,8 @@ const Footer = () => {
               <Image
                 src="/assets/medium-icon.svg"
                 alt="Medium Icon"
-                width={33}
-                height={30}
+                width={28}
+                height={28}
               />
             </a>
           </div>

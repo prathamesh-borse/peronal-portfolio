@@ -39,20 +39,20 @@ const Contact = () => {
               Contact me now for a Free consultation.
             </p>
           </div>
-          <div className="hover:cursor-pointer flex flex-wrap sm:flex-row flex-col gap-4 items-center justify-center p-3">
-            <div className="flex flex-wrap flex-col sm:flex-row sm:items-center sm:justify-center hover:bg-pink-600 transition-all duration-300 p-4 bg-[#00c2cb] rounded-lg items-center w-full sm:w-auto shadow-2xl gap-2">
+          <div className="hover:cursor-pointer flex flex-col sm:flex-row gap-4 items-center justify-center p-3">
+            <div className="flex flex-row items-center justify-center hover:bg-pink-600 transition-all duration-300 p-4 bg-[#00c2cb] rounded-lg w-full sm:w-auto shadow-2xl gap-2">
               <Image
                 src="/assets/email-icon.svg"
                 alt="Email Icon"
                 width={40}
                 height={40}
-                className="w-10 h-10"
+                className="w-10 h-10 hover:text-white"
               />
-              <h3 className="flex sm:pl-3 sm:items-center sm:justify-center hover:text-white text-center text-lg font-medium pl-0 text-black">
+              <h3 className="text-center text-base text-lg font-medium pl-0 text-black break-all hover:text-white">
                 prathameshborse.official@gmail.com
               </h3>
             </div>
-            <div className="flex flex-wrap flex-col sm:flex-row sm:items-center sm:justify-center hover:bg-pink-600 transition-all duration-300 p-4 px-24 bg-[#00c2cb] rounded-lg items-center w-full sm:w-auto shadow-2xl gap-2">
+            <div className="flex flex-row items-center justify-center hover:bg-pink-600 transition-all duration-300 p-4 bg-[#00c2cb] rounded-lg items-center w-full sm:w-auto shadow-2xl gap-2">
               <Image
                 src="/assets/phone-icon.svg"
                 alt="Waving Hand"
@@ -60,7 +60,7 @@ const Contact = () => {
                 height={40}
                 className="w-10 h-10"
               />
-              <span className="hover:text-white text-center text-lg font-medium pl-3 text-black">
+              <span className="text-center text-base sm:text-lg font-medium text-black hover:text-white">
                 (+91)<span className="pl-2">7972582918</span>
               </span>
             </div>
@@ -77,7 +77,7 @@ const Contact = () => {
                 value={userEmail}
                 onChange={(e) => setUserEmail(e.target.value)}
                 placeholder="Email"
-                className="contactMeForm w-full px-4 py-2 bg-transparent placeholder-white rounded-xl text-white border border-1 border-white rounded-lg outline-none mb-3"
+                className="contactMeForm w-full px-4 py-2 mb-3 bg-transparent text-black placeholder-gray-300 border border-white rounded-lg outline-none"
               />
               <textarea
                 name="message"
@@ -86,7 +86,7 @@ const Contact = () => {
                 cols={70}
                 value={userMessage}
                 onChange={(e) => setUserMessage(e.target.value)}
-                className="contactMeForm w-full px-4 py-3 bg-transparent placeholder-white rounded-xl text-white border border-1 border-white rounded-lg outline-none"
+                className="contactMeForm w-full px-4 py-3 bg-transparent text-black placeholder-gray-300 border border-white rounded-lg outline-none"
                 placeholder="Sent a message to get started."
               ></textarea>
             </div>
@@ -94,7 +94,7 @@ const Contact = () => {
           <div className="flex items-center justify-center">
             <button
               onClick={sendMail}
-              className="h-10 w-35 uppercase hover:text-white mt-2 px-6 py-2 bg-[#00c2cb] text-white uppercase rounded-full hover:opacity-70 transition duration-300"
+              className="w-auto sm:w-48 mx-auto mt-4 px-6 py-2 bg-[#00c2cb] text-white font-medium rounded-full hover:opacity-70 transition duration-300"
             >
               Submit
             </button>

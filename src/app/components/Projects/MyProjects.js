@@ -13,15 +13,15 @@ const MyProjects = () => {
         <h3 className="hero text-center text-[#00c2cb] text-3xl font-semibold mt-12 mb-8">
           My Projects
         </h3>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-8 lg:px-10 text-white mr-0">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-2 sm:px-3 lg:px-3 text-white mr-0">
           <motion.div
             initial={{ opacity: 0, scale: 0.4 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)] rounded-lg p-7 sm:p-6 xs:p-4 flex items-center justify-center w-full min-h-[340px] xs:min-h-[280px]">
-              <div className="flex flex-col text-left w-full p-4 sm:p-6 xs:p-4">
-                <div className="flex flex-row items-center justify-between mb-5">
+            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)] rounded-xl p-5 sm:p-7 flex items-center justify-center w-full min-h-[380px] sm:min-h-[340px]">
+              <div className="flex flex-col text-left w-full space-y-4">
+                <div className="flex flex-row items-center justify-between mb-3">
                   <div id="logos" className="flex items-center justify-between">
                     <svg
                       width="40"
@@ -70,17 +70,17 @@ const MyProjects = () => {
                     </a>
                   </div>
                 </div>
-                <span className="text-white text-xl font-semibold mb-8">
+                <span className="text-white text-xl font-semibold leading-relaxed">
                   Personal Portfolio Website
                 </span>
-                <span className="text-white text-base font-medium mb-8">
+                <span className="text-white text-base font-medium leading-relaxed">
                   Developed a Personal Portfolio Website using React, Talwind
                   CSS, Framer Motion, and JavaScript. The website showcases my
                   skills, projects, and experiences, providing a platform for
                   potential employers or clients to view my work and contact me.
                 </span>
 
-                <div className="opacity-40 font-medium flex tex-white mt-8">
+                <div className="opacity-40 font-medium flex flex-wrap tex-white mt-2 gap-2">
                   <span className="mr-5">React</span>
                   <span className="mr-5">Talwind CSS</span>
                   <span className="mr-5">JavaScript</span>
@@ -95,9 +95,9 @@ const MyProjects = () => {
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)] rounded-lg p-7 sm:p-6 xs:p-4 flex items-center justify-center w-full min-h-[340px] xs:min-h-[280px]">
-              <div className="flex flex-col text-left w-full">
-                <div className="flex flex-row items-center justify-between mb-5">
+            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)] rounded-xl p-5 sm:p-7 flex items-center justify-center w-full min-h-[380px] sm:min-h-[340px]">
+              <div className="flex flex-col text-left w-full space-y-4">
+                <div className="flex flex-row items-center justify-between mb-3">
                   <div id="logos" className="flex items-center justify-between">
                     <svg
                       width="40"
@@ -132,17 +132,17 @@ const MyProjects = () => {
                     </a>
                   </div>
                 </div>
-                <span className="text-white text-xl font-semibold mb-8">
+                <span className="text-white text-xl font-semibold leading-relaxed">
                   Library Management System
                 </span>
-                <span className="text-white text-base font-medium mb-8">
+                <span className="text-white text-base font-medium leading-relaxed">
                   Developed a Library Management System using Java, MySQL
                   Database, JFrame, enabling users/librarian to store the
                   information about the books, and check the inventory of all
                   books, remove book, check all staff records.
                 </span>
 
-                <div className="opacity-40 font-medium flex tex-white mt-8">
+                <div className="opacity-40 font-medium flex tex-white mt-2 gap-2">
                   <span className="mr-5">Java</span>
                   <span className="mr-5">MySQL Database</span>
                   <span className="mr-5">JFrame</span>
@@ -155,9 +155,9 @@ const MyProjects = () => {
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)] rounded-lg p-7 sm:p-6 xs:p-4 flex items-center justify-center w-full min-h-[340px] xs:min-h-[280px]">
-              <div className="flex flex-col text-left w-full">
-                <div className="flex flex-row items-center justify-between mb-5">
+            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)] rounded-xl p-5 sm:p-7 flex items-center justify-center w-full min-h-[380px] xs:min-h-[340px]">
+              <div className="flex flex-col text-left w-full space-y-4">
+                <div className="flex flex-row items-center justify-between mb-3">
                   <div id="logos" className="flex items-center justify-between">
                     <svg
                       width="40"
@@ -192,17 +192,17 @@ const MyProjects = () => {
                     </a>
                   </div>
                 </div>
-                <span className="text-white text-xl font-semibold mb-8">
+                <span className="text-white text-xl font-semibold leading-relaxed">
                   Gemini Chatbot
                 </span>
-                <span className="text-white text-base font-medium mb-8">
+                <span className="text-white text-base font-medium leading-relaxed">
                   Developed a Gemini Chatbot using HTML, CSS, and Bootstrap 4.
                   The chatbot is designed to provide users with an interactive
                   experience, allowing them to ask questions and receive
                   responses in real-time.
                 </span>
 
-                <div className="opacity-40 font-medium flex tex-white mt-8">
+                <div className="opacity-40 font-medium flex tex-white mt-2 gap-2">
                   <span className="mr-5">React</span>
                   <span className="mr-5">CSS</span>
                   <span className="mr-5">Bootstrap</span>
@@ -216,9 +216,9 @@ const MyProjects = () => {
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)] rounded-lg p-7 sm:p-6 xs:p-4 flex items-center justify-center w-full min-h-[340px] xs:min-h-[280px]">
-              <div className="flex flex-col text-left w-full">
-                <div className="flex flex-row items-center justify-between mb-5">
+            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)] rounded-xl p-5 sm:p-7 flex items-center justify-center w-full min-h-[380px] xs:min-h-[340px]">
+              <div className="flex flex-col text-left w-full space-y-4">
+                <div className="flex flex-row items-center justify-between mb-3">
                   <div id="logos" className="flex items-center justify-between">
                     <svg
                       width="40"
@@ -267,17 +267,17 @@ const MyProjects = () => {
                     </a>
                   </div>
                 </div>
-                <span className="text-white text-xl font-semibold mb-8">
+                <span className="text-white text-xl font-semibold leading-relaxed">
                   Simple Portfolio Website
                 </span>
-                <span className="text-white text-base font-medium mb-8">
+                <span className="text-white text-base font-medium leading-relaxed">
                   Developed a simple Portfolio website using HTML, CSS Only.
                   Which basically shows the information about the developer and
                   also helps users to connect with the develop by navigating the
                   social platform mentioned in the website.
                 </span>
 
-                <div className="opacity-40 font-medium flex tex-white mt-8">
+                <div className="opacity-40 font-medium flex tex-white mt-2 gap-2">
                   <span className="mr-5">HTML</span>
                   <span className="mr-5">CSS</span>
                 </div>
