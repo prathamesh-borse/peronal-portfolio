@@ -13,14 +13,14 @@ const MyProjects = () => {
         <h3 className="hero text-center text-[#00c2cb] text-3xl font-semibold mt-12 mb-8">
           My Projects
         </h3>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10 text-white mr-10">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-8 lg:px-10 text-white mr-0">
           <motion.div
             initial={{ opacity: 0, scale: 0.4 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300  bg-[rgb(43,43,43)] rounded-lg p-5 flex items-center justify-center">
-              <div className="flex flex-col text-left">
+            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)] rounded-lg p-7 sm:p-6 xs:p-4 flex items-center justify-center w-full min-h-[340px] xs:min-h-[280px]">
+              <div className="flex flex-col text-left w-full p-4 sm:p-6 xs:p-4">
                 <div className="flex flex-row items-center justify-between mb-5">
                   <div id="logos" className="flex items-center justify-between">
                     <svg
@@ -78,8 +78,6 @@ const MyProjects = () => {
                   CSS, Framer Motion, and JavaScript. The website showcases my
                   skills, projects, and experiences, providing a platform for
                   potential employers or clients to view my work and contact me.
-                  It features a responsive design, ensuring compatibility across
-                  various devices and screen sizes.
                 </span>
 
                 <div className="opacity-40 font-medium flex tex-white mt-8">
@@ -97,8 +95,8 @@ const MyProjects = () => {
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300  bg-[rgb(43,43,43)] rounded-lg p-5 flex items-center justify-center">
-              <div className="flex flex-col text-left">
+            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)] rounded-lg p-7 sm:p-6 xs:p-4 flex items-center justify-center w-full min-h-[340px] xs:min-h-[280px]">
+              <div className="flex flex-col text-left w-full">
                 <div className="flex flex-row items-center justify-between mb-5">
                   <div id="logos" className="flex items-center justify-between">
                     <svg
@@ -157,8 +155,8 @@ const MyProjects = () => {
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300  bg-[rgb(43,43,43)] rounded-lg p-5 flex items-center justify-center">
-              <div className="flex flex-col text-left">
+            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)] rounded-lg p-7 sm:p-6 xs:p-4 flex items-center justify-center w-full min-h-[340px] xs:min-h-[280px]">
+              <div className="flex flex-col text-left w-full">
                 <div className="flex flex-row items-center justify-between mb-5">
                   <div id="logos" className="flex items-center justify-between">
                     <svg
@@ -218,8 +216,8 @@ const MyProjects = () => {
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300  bg-[rgb(43,43,43)] rounded-lg p-5 flex items-center justify-center">
-              <div className="flex flex-col text-left">
+            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)] rounded-lg p-7 sm:p-6 xs:p-4 flex items-center justify-center w-full min-h-[340px] xs:min-h-[280px]">
+              <div className="flex flex-col text-left w-full">
                 <div className="flex flex-row items-center justify-between mb-5">
                   <div id="logos" className="flex items-center justify-between">
                     <svg

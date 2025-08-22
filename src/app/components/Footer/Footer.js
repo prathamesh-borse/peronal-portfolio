@@ -7,7 +7,7 @@ import "./styles.css";
 const Footer = () => {
   return (
     <>
-      <footer className="footer w-full bg-[rgba(43,43,43)] bg-opacity-50 text-white min-h-[80px] flex items-center justify-center mt-17">
+      <footer className="footer w-full bg-[rgb(43,43,43)] bg-opacity-50 text-white min-h-[80px] flex items-center justify-center mt-17">
         <div className="w-full max-w-6xl flex flex-col md:flex-row justify-between items-center">
           <div className="footerText text-white text-2xl font-medium">
             www.prathameshborse.com
