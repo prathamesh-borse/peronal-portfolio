@@ -41,7 +41,7 @@ const MyProjects = () => {
                   </div>
                   <div className="flex items-center space-x-1 ">
                     <a
-                      href="https://prathameshportfolio.onrender.com/"
+                      href="https://prathameshdev.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cursor-pointer text-white p-1 rounded-full transition-all duration-300 hover:opacity-70 mb-1"
