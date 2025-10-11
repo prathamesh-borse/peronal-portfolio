@@ -69,7 +69,7 @@ const Main = () => {
                   1000,
                   "Wordpress Developer",
                   1000,
-                  "Freelancer",
+                  "Frontend Developer",
                   1000,
                 ]}
                 wrapper="span"
