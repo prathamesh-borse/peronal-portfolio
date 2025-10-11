@@ -1,7 +1,6 @@
 "use client";
 /* eslint-disable @next/next/no-html-link-for-pages */
 import React, { useEffect, useState } from "react";
-import "../../../app/globals.css";
 import { useGlobalContext } from "../../context/GlobalContext";
 
 const Navbar = () => {
@@ -26,6 +25,16 @@ const Navbar = () => {
     }
   }, [isClick]);
 
+  useEffect(() => {
+    const onKeyDown = (e) => {
+      if (e.key === "Escape" && isClick) {
+        toggleNavbar();
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [isClick, toggleNavbar]);
+
   // Toggle Dark Mode
   const toggleDarkMode = () => {
     const newMode = !darkMode;
@@ -36,7 +45,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-opacity-60 backdrop-blur-md mb-30">
+      <nav
+        className="fixed top-0 left-0 right-0 z-50 bg-opacity-60 backdrop-blur-md mb-30"
+        aria-label="Primary"
+      >
         <div className="relative z-10 max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -46,7 +58,11 @@ const Navbar = () => {
                 </a>
               </div>
             </div>
-            <nav className="hidden md:flex space-x-5 text-1xl uppercase pt-5">
+            <div
+              className="hidden md:flex space-x-5 text-1xl uppercase pt-5"
+              role="navigation"
+              aria-label="Primary links"
+            >
               {/* Dark Mode Toggle */}
               <div className="mr-2 mt-2">
                 <label className="relative inline-flex items-center cursor-pointer">
@@ -91,7 +107,7 @@ const Navbar = () => {
               >
                 Resume
               </a>
-            </nav>
+            </div>
             <div className="md:hidden flex items-center mr-2">
               {/* Dark Mode Toggle */}
               <div className={`mr-2 mt-2 ${isClick ? "hidden" : ""}`}>
@@ -109,6 +125,9 @@ const Navbar = () => {
               <button
                 className="menubar rounded-md text-white focus:outline-none focus:ring-2 focus:ring-white"
                 onClick={toggleNavbar}
+                aria-expanded={isClick}
+                aria-controls="mobile-menu"
+                aria-label="Toggle navigation"
               >
                 {isClick ? (
                   <svg
@@ -148,10 +167,16 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isClick && (
-          <div className="fixed top-0 left-0 w-full h-screen z-[999] bg-[#00c2cb] flex flex-col items-center justify-center space-y-6">
+          <div
+            id="mobile-menu"
+            className="fixed top-0 left-0 w-full h-screen z-[999] bg-[#00c2cb] flex flex-col items-center justify-center space-y-6"
+            role="dialog"
+            aria-modal="true"
+          >
             <button
               className="absolute top-4 right-4 text-white"
               onClick={toggleNavbar}
+              aria-label="Close navigation"
             >
               <svg
                 className="h-6 w-6"

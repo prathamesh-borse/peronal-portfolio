@@ -1,16 +1,20 @@
 "use client";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { useGlobalContext } from "../../context/GlobalContext";
-import "../../../app/globals.css";
 import { delay, motion, useInView } from "framer-motion";
 
 const Main = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { triggerOnce: false, margin: "-100px" });
   const { isClick } = useGlobalContext();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Function to scroll to the bottom smoothly
   const scrollToBottom = () => {
@@ -27,7 +31,7 @@ const Main = () => {
         className="flex items-center justify-center text-white mt-70 sm:mt-40 md:mt-70 lg:mt-56 xl:mt-64 transition-opacity duration-300"
       >
         <div className="flex flex-col items-center text-white">
-          <motion.dev
+          <motion.div
             initial={{ opacity: 0, y: 50 }} // Start hidden and move up
             animate={isInView ? { opacity: 1, y: 0 } : {}} // Fade in and move to original position
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -39,12 +43,14 @@ const Main = () => {
                 alt="Waving Hand"
                 width={40}
                 height={100}
+                unoptimized
+                sizes="40px"
               />
               ,<span className="hero px-2">I&apos;m</span>
             </div>
-          </motion.dev>
+          </motion.div>
 
-          <motion.dev
+          <motion.div
             initial={{ opacity: 0, y: 50 }} // Start hidden and move up
             animate={isInView ? { opacity: 1, y: 0 } : {}} // Fade in and move to original position
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
@@ -52,38 +58,49 @@ const Main = () => {
             <div className="hero items-center space-x-1 text-white text-4xl font-semibold mb-2">
               Prathamesh Borse
             </div>
-          </motion.dev>
-          <motion.dev
+          </motion.div>
+          <motion.div
             initial={{ opacity: 0, y: 50 }} // Start hidden and move up
             animate={isInView ? { opacity: 1, y: 0 } : {}} // Fade in and move to original position
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
           >
             <div className="items-center text-[#00c2cb] font-medium mb-2">
-              <TypeAnimation
-                cursor={false}
-                sequence={[
-                  // Same substring at the start will only be typed out once, initially
-                  "Full Stack Developer",
-                  1000, // wait 1s before replacing "Mice" with "Hamsters"
-                  "Backend Developer",
-                  1000,
-                  "Wordpress Developer",
-                  1000,
-                  "Frontend Developer",
-                  1000,
-                ]}
-                wrapper="span"
-                speed={40}
-                style={{
-                  fontSize: "1.5em",
-                  display: "inline-block",
-                  textTransform: "uppercase",
-                }}
-                repeat={Infinity}
-              />
+              {mounted ? (
+                <TypeAnimation
+                  cursor={false}
+                  sequence={[
+                    "Full Stack Developer",
+                    1000,
+                    "Backend Developer",
+                    1000,
+                    "Wordpress Developer",
+                    1000,
+                    "Frontend Developer",
+                    1000,
+                  ]}
+                  wrapper="span"
+                  speed={40}
+                  style={{
+                    fontSize: "1.5em",
+                    display: "inline-block",
+                    textTransform: "uppercase",
+                  }}
+                  repeat={Infinity}
+                />
+              ) : (
+                <span
+                  style={{
+                    fontSize: "1.5em",
+                    display: "inline-block",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  Full Stack Developer
+                </span>
+              )}
             </div>
-          </motion.dev>
-          <motion.dev
+          </motion.div>
+          <motion.div
             initial={{ opacity: 0, y: 50 }} // Start hidden and move up
             animate={isInView ? { opacity: 1, y: 0 } : {}} // Fade in and move to original position
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
@@ -91,8 +108,8 @@ const Main = () => {
             <div className="items-center space-x-1 text-white font-medium text-xl font-medium">
               <span className="hero">3 Years of Experience</span>
             </div>
-          </motion.dev>
-          <motion.dev
+          </motion.div>
+          <motion.div
             initial={{ opacity: 0, y: 50 }} // Start hidden and move up
             animate={isInView ? { opacity: 1, y: 0 } : {}} // Fade in and move to original position
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
@@ -154,11 +171,11 @@ const Main = () => {
                 </a>
               )}
             </div>
-          </motion.dev>
+          </motion.div>
         </div>
       </div>
 
-      <motion.dev
+      <motion.div
         initial={{ opacity: 0, y: 50 }} // Start hidden and move up
         animate={isInView ? { opacity: 1, y: 0 } : {}} // Fade in and move to original position
         transition={{ duration: 0.8, ease: "easeOut", delay: 1 }}
@@ -178,7 +195,7 @@ const Main = () => {
             <span className="hero">Scroll Down</span>
           </div>
         )}
-      </motion.dev>
+      </motion.div>
     </>
   );
 };
