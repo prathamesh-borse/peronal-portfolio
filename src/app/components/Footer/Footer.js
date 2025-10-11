@@ -11,12 +11,12 @@ const Footer = () => {
         <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 px-4">
           <div className="footerText hover:cursor-pointer text-white text-lg sm:text-xl font-medium text-center md:text-left">
             <a
-              href="https://prathameshportfolio.onrender.com/"
+              href="https://prathameshdev.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white rounded-full transition-all duration-300 hover:opacity-70"
             >
-              www.prathameshborse.onrender.com
+              prathameshdev.vercel.app
             </a>
           </div>
           <div className="flex items-center justify-center space-x-4">
@@ -62,7 +62,7 @@ const Footer = () => {
 
             {/* Medium */}
             <a
-              href="https://medium.com/yourusername"
+              href="https://medium.com/@prathameshborse"
               target="_blank"
               rel="noopener noreferrer"
               className="mediumIcon text-white p-1 rounded-lg transition-all duration-300 hover:opacity-70 medium-icon"
