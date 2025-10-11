@@ -140,7 +140,7 @@ const Main = () => {
               {/* Medium */}
               {!isClick && (
                 <a
-                  href="https://medium.com/yourusername"
+                  href="https://medium.com/@prathameshborse"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mediumIcon text-white p-1 rounded-lg transition-all duration-300 hover:opacity-70 medium-icon"
