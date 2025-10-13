@@ -106,7 +106,7 @@ const Main = () => {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
           >
             <div className="items-center space-x-1 text-white font-medium text-xl font-medium">
-              <span className="hero">3 Years of Experience</span>
+              <span className="hero">3+ Years of Experience</span>
             </div>
           </motion.div>
           <motion.div
