@@ -5,6 +5,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { useGlobalContext } from "../../context/GlobalContext";
 import { delay, motion, useInView } from "framer-motion";
+import { Analytics } from "@vercel/analytics/next";
 
 const Main = () => {
   const ref = useRef(null);
@@ -196,6 +197,7 @@ const Main = () => {
           </div>
         )}
       </motion.div>
+      <Analytics />
     </>
   );
 };

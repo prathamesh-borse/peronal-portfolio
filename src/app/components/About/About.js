@@ -3,6 +3,7 @@ import React from "react";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { useGlobalContext } from "../../context/GlobalContext";
+import { Analytics } from "@vercel/analytics/next";
 
 const About = () => {
   const ref = useRef(null);
@@ -88,6 +89,7 @@ const About = () => {
           )}
         </div>
       </div>
+      <Analytics />
     </>
   );
 };

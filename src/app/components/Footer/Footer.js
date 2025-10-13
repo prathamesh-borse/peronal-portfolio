@@ -3,6 +3,7 @@ import React from "react";
 import "../../../app/globals.css";
 import { FaGithub } from "react-icons/fa";
 import "./styles.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const Footer = () => {
   return (
@@ -77,6 +78,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <Analytics />
     </>
   );
 };

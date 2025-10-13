@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import "./styles.css";
 import { motion, useInView } from "framer-motion";
+import { Analytics } from "@vercel/analytics/next";
 
 const MyProjects = () => {
   const ref = useRef(null);
@@ -290,6 +291,7 @@ const MyProjects = () => {
           </motion.div>
         </div>
       </div>
+      <Analytics />
     </>
   );
 };

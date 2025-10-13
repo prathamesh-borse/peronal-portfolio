@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { Analytics } from "@vercel/analytics/next";
 
 const Badge = ({ children }) => (
   <span className="inline-block px-3 py-1 rounded-full bg-[#00C2CB] text-white border border-[#00c2cb]/30 text-sm">
@@ -97,6 +98,7 @@ const Skills = () => {
           />
         </div>
       </div>
+      <Analytics />
     </section>
   );
 };

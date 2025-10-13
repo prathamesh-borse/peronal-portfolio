@@ -1,4 +1,5 @@
 "use client";
+import { Analytics } from "@vercel/analytics/next";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -119,6 +120,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Analytics />
     </>
   );
 };

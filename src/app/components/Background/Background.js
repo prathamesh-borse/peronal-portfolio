@@ -1,4 +1,5 @@
 "use client";
+import { Analytics } from "@vercel/analytics/next";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
@@ -229,6 +230,7 @@ export default function App() {
           }}
         />
       )}
+      <Analytics />
     </div>
   );
 }

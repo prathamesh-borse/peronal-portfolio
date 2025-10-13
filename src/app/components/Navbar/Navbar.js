@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import React, { useEffect, useState } from "react";
 import { useGlobalContext } from "../../context/GlobalContext";
+import { Analytics } from "@vercel/analytics/next";
 
 const Navbar = () => {
   const { isClick, toggleNavbar } = useGlobalContext();
@@ -231,6 +232,7 @@ const Navbar = () => {
           </div>
         )}
       </nav>
+      <Analytics />
     </>
   );
 };
