@@ -7,6 +7,7 @@ const Background = dynamic(() => import("./components/Background/Background"), {
 import Main from "./components/Main/Main";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/MyProjects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -34,6 +35,7 @@ export default function Home({ ...pageProps }) {
       <Navbar {...pageProps} />
       <Main />
       <About />
+      <Skills />
       <Projects />
       <Contact />
       <Footer />

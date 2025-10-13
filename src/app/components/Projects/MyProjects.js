@@ -9,8 +9,12 @@ const MyProjects = () => {
 
   return (
     <>
-      <div ref={ref} id="projects" className="text-white min-h-screen">
-        <h3 className="hero text-center text-[#00c2cb] text-3xl font-semibold mt-12 mb-8">
+      <div
+        ref={ref}
+        id="projects"
+        className="text-white scroll-mt-24 py-20 px-2"
+      >
+        <h3 className="hero text-center text-[#00c2cb] text-3xl font-semibold mb-8">
           My Projects
         </h3>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-2 sm:px-3 lg:px-3 text-white mr-0">
