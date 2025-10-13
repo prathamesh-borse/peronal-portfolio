@@ -11,6 +11,7 @@ import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/MyProjects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home({ ...pageProps }) {
   return (
@@ -39,6 +40,7 @@ export default function Home({ ...pageProps }) {
       <Projects />
       <Contact />
       <Footer />
+      <Analytics />
     </>
   );
 }
