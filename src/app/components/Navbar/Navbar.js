@@ -55,7 +55,7 @@ const Navbar = () => {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <a href="/" className="text-white text-2xl font-bold ml-3">
-                  {"< Prathamesh />"}
+                  {" Prathamesh "}
                 </a>
               </div>
             </div>
