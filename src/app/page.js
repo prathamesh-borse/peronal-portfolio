@@ -12,6 +12,7 @@ import Projects from "./components/Projects/MyProjects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { Analytics } from "@vercel/analytics/next";
+import Experience from "./components/Experience/Experience";
 
 export default function Home({ ...pageProps }) {
   return (
@@ -37,6 +38,7 @@ export default function Home({ ...pageProps }) {
       <Main />
       <About />
       <Skills />
+      <Experience />
       <Projects />
       <Contact />
       <Footer />

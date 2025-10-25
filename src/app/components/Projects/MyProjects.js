@@ -24,7 +24,7 @@ const MyProjects = () => {
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)] rounded-xl p-5 sm:p-7 flex items-center justify-center w-full min-h-[380px] sm:min-h-[340px]">
+            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)]/90 rounded-xl p-5 sm:p-7 flex items-center justify-center w-full min-h-[380px] sm:min-h-[340px]">
               <div className="flex flex-col text-left w-full space-y-4">
                 <div className="flex flex-row items-center justify-between mb-3">
                   <div id="logos" className="flex items-center justify-between">
@@ -94,13 +94,12 @@ const MyProjects = () => {
               </div>
             </div>
           </motion.div>
-
           <motion.div
             initial={{ opacity: 0, scale: 0.4 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)] rounded-xl p-5 sm:p-7 flex items-center justify-center w-full min-h-[380px] sm:min-h-[340px]">
+            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)]/90 rounded-xl p-5 sm:p-7 flex items-center justify-center w-full min-h-[380px] sm:min-h-[340px]">
               <div className="flex flex-col text-left w-full space-y-4">
                 <div className="flex flex-row items-center justify-between mb-3">
                   <div id="logos" className="flex items-center justify-between">
@@ -174,7 +173,84 @@ const MyProjects = () => {
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)] rounded-xl p-5 sm:p-7 flex items-center justify-center w-full min-h-[380px] xs:min-h-[340px]">
+            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)]/90 rounded-xl p-5 sm:p-7 flex items-center justify-center w-full min-h-[380px] sm:min-h-[340px]">
+              <div className="flex flex-col text-left w-full space-y-4">
+                <div className="flex flex-row items-center justify-between mb-3">
+                  <div id="logos" className="flex items-center justify-between">
+                    <svg
+                      width="40"
+                      xmlns="http://www.w3.org/2000/svg"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#00c2cb"
+                      strokeWidth="1"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      {" "}
+                      <title>Folder</title>{" "}
+                      <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>{" "}
+                    </svg>
+                  </div>
+                  <div className="flex items-center">
+                    <a
+                      href="https://airesumeanalyse.vercel.app/auth"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cursor-pointer text-white p-1 rounded-full transition-all duration-300 hover:opacity-70 mb-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        className="w-12 h-12 fill-[#00C2CB]"
+                      >
+                        <path d="M14 3h7v7h-2V5.41l-9.29 9.3l-1.42-1.42l9.3-9.29H14V3M5 5h7v2H5v12h12v-7h2v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" />
+                      </svg>
+                    </a>
+                    <a
+                      href="https://github.com/prathamesh-borse/AIResumeAnalyserFrontend"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className=" cursor-pointer text-white p-1 rounded-full transition-all duration-300 hover:opacity-70"
+                    >
+                      <Image
+                        src="/assets/github-icon.svg"
+                        alt="Github Icon"
+                        width={50}
+                        height={30}
+                        className="filter-sky transition-all duration-300 hover:filter-none"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <span className="text-white text-xl font-semibold leading-relaxed">
+                  AI Resume Analyser
+                </span>
+                <span className="text-white text-base font-medium leading-relaxed">
+                  Developed an AI Resume Analyser using Java, Spring Boot,
+                  React, and Next.js. The application leverages AI algorithms to
+                  analyze resumes, providing insights and recommendations to
+                  improve resume and increase chances of getting shortlisted by
+                  employers.
+                </span>
+
+                <div className="opacity-40 font-medium flex tex-white mt-2 gap-2">
+                  <span className="mr-5">Java</span>
+                  <span className="mr-5">Spring Boot</span>
+                  <span className="mr-5">Huggingface AI</span>
+                  <span className="mr-5">React</span>
+                  <span className="mr-5">Next.js</span>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.4 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)]/90 rounded-xl p-5 sm:p-7 flex items-center justify-center w-full min-h-[380px] xs:min-h-[340px]">
               <div className="flex flex-col text-left w-full space-y-4">
                 <div className="flex flex-row items-center justify-between mb-3">
                   <div id="logos" className="flex items-center justify-between">
@@ -235,7 +311,7 @@ const MyProjects = () => {
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)] rounded-xl p-5 sm:p-7 flex items-center justify-center w-full min-h-[380px] xs:min-h-[340px]">
+            <div className="hover:-translate-y-1 hover:bg-pink-600 hover:opacity-100 transition-all duration-300 bg-[rgb(43,43,43)]/90 rounded-xl p-5 sm:p-7 flex items-center justify-center w-full min-h-[380px] xs:min-h-[340px]">
               <div className="flex flex-col text-left w-full space-y-4">
                 <div className="flex flex-row items-center justify-between mb-3">
                   <div id="logos" className="flex items-center justify-between">

@@ -90,6 +90,12 @@ const Navbar = () => {
                 About Me
               </a>
               <a
+                href="#experience"
+                className="text-white hover:opacity-70 rounded-lg px-2 py-2 transition-all duration-300"
+              >
+                Experience
+              </a>
+              <a
                 href="#projects"
                 className="text-white hover:opacity-70 rounded-lg px-2 py-2 transition-all duration-300"
               >
@@ -207,6 +213,13 @@ const Navbar = () => {
               className="text-black hover:opacity-70 rounded-lg px-3 py-2 transition-all duration-300"
             >
               About Me
+            </a>
+            <a
+              href="#experience"
+              onClick={toggleNavbar}
+              className="text-black hover:opacity-70 rounded-lg px-3 py-2 transition-all duration-300"
+            >
+              Experience
             </a>
             <a
               href="#projects"
