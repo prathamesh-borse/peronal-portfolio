@@ -19,9 +19,8 @@ const experienceData = [
     role: "Software Engineer",
     period: "Jun 2022 — Sep 2024",
     bullets: [
-      "Developed landing pages and dashboards with reusable patterns",
-      "Integrated APIs and optimized bundle size",
-      "Set up CI linting and formatting workflows",
+      "As a Software Engineer at Persistent Systems, I got the opportunity to work on the Web application project.",
+      "Through my work on this project, I gained valuable experience in software engineering and web application development. I was able to hone my skills in front-end development, particularly in building reusable and customizable components.",
     ],
   },
   {
@@ -29,9 +28,7 @@ const experienceData = [
     role: "Software Engineer - Trainee",
     period: "Jan 2022 — July 2022",
     bullets: [
-      "Delivered custom websites on time with CMS handoff",
-      "Improved Lighthouse scores across projects",
-      "Automated deployments and previews",
+      "Learned technologies like SQL, Java, Spring, Html, Js and many more was explored and also prepared to POC's for the concepts that I understood in the internship.",
     ],
   },
 ];
