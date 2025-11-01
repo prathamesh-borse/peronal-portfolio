@@ -195,7 +195,7 @@ const MyProjects = () => {
                   </div>
                   <div className="flex items-center">
                     <a
-                      href="https://airesumeanalyse.vercel.app/auth"
+                      href="https://airesumeanalyse.vercel.app"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cursor-pointer text-white p-1 rounded-full transition-all duration-300 hover:opacity-70 mb-1"
