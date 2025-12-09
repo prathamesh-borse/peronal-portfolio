@@ -82,8 +82,29 @@ const About = () => {
               animate={isInView ? { opacity: 1, x: 0 } : {}} // Move to normal position
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <div className="flex w-full md:w-1/2 p-10 text-[#00c2cb] items-center">
-                <span className="hero text-white mb-12">Developer Image</span>
+              {/* Main image container */}
+              <div className="relative ml-30">
+                {/* Decorative border */}
+                <div className="absolute -inset-2 bg-gradient-to-r from-[#00c2cb] to-purple-500 rounded-2xl opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                {/* Image wrapper with glassmorphism effect */}
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl backdrop-blur-sm border border-white/10">
+                  <Image
+                    src="/assets/developer.png"
+                    alt="Developer Image"
+                    width={350}
+                    height={350}
+                    className="rounded-2xl object-cover transition-transform duration-500 group-hover:scale-105"
+                    priority
+                  />
+
+                  {/* Overlay gradient on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#00c2cb]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                {/* Floating accent elements */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-[#00c2cb] rounded-full blur-xl opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
+                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-purple-500 rounded-full blur-xl opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
               </div>
             </motion.div>
           )}
