@@ -65,7 +65,10 @@ const Navbar = () => {
             >
               {/* Dark Mode Toggle */}
               <div className="mr-2 mt-2">
-                <label className="relative inline-flex items-center cursor-pointer">
+                <label
+                  for="darkMode-toggle"
+                  className="relative inline-flex items-center cursor-pointer"
+                >
                   <input
                     type="checkbox"
                     className="cursor-pointer sr-only peer"
@@ -117,7 +120,10 @@ const Navbar = () => {
             <div className="md:hidden flex items-center mr-2">
               {/* Dark Mode Toggle */}
               <div className={`mr-2 mt-2 ${isClick ? "hidden" : ""}`}>
-                <label className="relative inline-flex items-center cursor-pointer">
+                <label
+                  for="darkMode-toggle"
+                  className="relative inline-flex items-center cursor-pointer"
+                >
                   <input
                     type="checkbox"
                     className="cursor-pointer sr-only peer"

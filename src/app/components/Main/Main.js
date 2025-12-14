@@ -132,8 +132,9 @@ const Main = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white p-1 rounded-full transition-all duration-300 hover:opacity-70"
+                aria-label="GitHub Profile"
               >
-                <Github size={38} />
+                <FaGithub size={38} />
               </a>
 
               {/* LinkedIn */}
@@ -142,6 +143,7 @@ const Main = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white p-1 rounded-lg transition-all duration-300 hover:opacity-70"
+                aria-label="LinkedIn Profile"
               >
                 <Image
                   src="/assets/linkedin.svg"
@@ -157,6 +159,7 @@ const Main = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white p-1 rounded-full transition-all duration-300 hover:opacity-70"
+                aria-label="Twitter Profile"
               >
                 <Image
                   src="/assets/twitter-icon.webp"
@@ -172,6 +175,7 @@ const Main = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mediumIcon text-white p-1 rounded-lg transition-all duration-300 hover:opacity-70 medium-icon"
+                  aria-label="Medium Profile"
                 >
                   <Image
                     src="/assets/medium-icon.svg"
