@@ -33,16 +33,18 @@ export default function Home({ ...pageProps }) {
           image: "/favicon_2.png",
         })}
       </Script>
-      <Background />
-      <Navbar {...pageProps} />
-      <Main />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Contact />
-      <Footer />
-      <Analytics />
+      <main>
+        <Background />
+        <Navbar {...pageProps} />
+        <Main />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Contact />
+        <Footer />
+        <Analytics />
+      </main>
     </>
   );
 }
