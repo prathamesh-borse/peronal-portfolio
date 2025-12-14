@@ -1,4 +1,3 @@
-"use client";
 /* eslint-disable @next/next/no-html-link-for-pages */
 import React, { useEffect, useState } from "react";
 import { useGlobalContext } from "../../context/GlobalContext";

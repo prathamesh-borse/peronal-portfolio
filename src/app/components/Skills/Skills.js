@@ -1,4 +1,3 @@
-"use client";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Analytics } from "@vercel/analytics/next";
@@ -30,7 +29,7 @@ const Skills = () => {
   const isInView = useInView(ref, { triggerOnce: false, margin: "-100px" });
 
   return (
-    <section id="skills" className="scroll-mt-24 py-20 px-4 text-white">
+    <section id="skills" className="scroll-mt-24 py-10 px-4 text-white">
       <div className="max-w-7xl mx-auto">
         <h3 className="hero text-center text-[#00c2cb] text-3xl font-semibold mb-6">
           Skills

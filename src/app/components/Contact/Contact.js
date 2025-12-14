@@ -1,4 +1,3 @@
-"use client";
 import { useForm } from "@formspree/react";
 import React, { useEffect, useState } from "react";
 import { Analytics } from "@vercel/analytics/next";

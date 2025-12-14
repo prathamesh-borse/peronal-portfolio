@@ -14,7 +14,7 @@ const About = () => {
     <>
       <div
         id="about"
-        className="h-screen flex items-center justify-center text-white mt-50"
+        className="h-screen flex items-center justify-center text-white mt-50 mb-20"
       >
         <div
           ref={ref}
@@ -83,19 +83,20 @@ const About = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               {/* Main image container */}
-              <div className="relative ml-30">
+              <div className="relative">
                 {/* Decorative border */}
                 <div className="absolute -inset-2 bg-gradient-to-r from-[#00c2cb] to-purple-500 rounded-2xl opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                 {/* Image wrapper with glassmorphism effect */}
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl backdrop-blur-sm border border-white/10">
                   <Image
-                    src="/assets/developer.png"
+                    src="/assets/developer.webp"
                     alt="Developer Image"
-                    width={350}
-                    height={350}
-                    className="rounded-2xl object-cover transition-transform duration-500 group-hover:scale-105"
+                    width={480}
+                    height={480}
+                    className="rounded-2xl object-cover transition-transform duration-500 group-hover:scale-105 developer-image"
                     priority
+                    sizes="(max-width: 500px) 90vw, 580px"
                   />
 
                   {/* Overlay gradient on hover */}

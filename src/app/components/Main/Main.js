@@ -1,11 +1,19 @@
-"use client";
 import { FaGithub } from "react-icons/fa";
+import { Github } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { useGlobalContext } from "../../context/GlobalContext";
-import { delay, motion, useInView } from "framer-motion";
+import {
+  LazyMotion,
+  domAnimation,
+  m,
+  delay,
+  motion,
+  useInView,
+} from "framer-motion";
 import { Analytics } from "@vercel/analytics/next";
+import "../../globals.css";
 
 const Main = () => {
   const ref = useRef(null);
@@ -40,12 +48,14 @@ const Main = () => {
             <div className="flex items-center space-x-1 text-white text-2xl">
               <span className="hero">Hello</span>
               <Image
-                src="/assets/Hello.gif"
+                src="/assets/Hello.avif"
                 alt="Waving Hand"
-                width={40}
-                height={100}
-                unoptimized
-                sizes="40px"
+                width={50}
+                height={70}
+                loading="eager"
+                sizes="80px"
+                priority={false}
+                className="waving-hand"
               />
               ,<span className="hero px-2">I&apos;m</span>
             </div>
@@ -123,7 +133,7 @@ const Main = () => {
                 rel="noopener noreferrer"
                 className="text-white p-1 rounded-full transition-all duration-300 hover:opacity-70"
               >
-                <FaGithub size={38} />
+                <Github size={38} />
               </a>
 
               {/* LinkedIn */}

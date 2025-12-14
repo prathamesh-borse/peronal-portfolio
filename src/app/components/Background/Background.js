@@ -1,4 +1,3 @@
-"use client";
 import { Analytics } from "@vercel/analytics/next";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
