@@ -65,15 +65,13 @@ const Navbar = () => {
             >
               {/* Dark Mode Toggle */}
               <div className="mr-2 mt-2">
-                <label
-                  for="darkMode-toggle"
-                  className="relative inline-flex items-center cursor-pointer"
-                >
+                <label className="relative inline-flex items-center cursor-pointer">
                   <input
                     type="checkbox"
                     className="cursor-pointer sr-only peer"
                     checked={darkMode}
                     onChange={toggleDarkMode}
+                    aria-label="Toggle dark mode"
                   />
                   <div className="w-14 h-7 bg-[#00C2CB] rounded-full peer-checked:bg-pink-500 peer transition-all duration-300 cursor-pointer"></div>
                   <span className="absolute left-2 top-1 w-5 h-5 bg-white rounded-full transition-transform duration-300 peer-checked:translate-x-5"></span>
@@ -120,15 +118,13 @@ const Navbar = () => {
             <div className="md:hidden flex items-center mr-2">
               {/* Dark Mode Toggle */}
               <div className={`mr-2 mt-2 ${isClick ? "hidden" : ""}`}>
-                <label
-                  for="darkMode-toggle"
-                  className="relative inline-flex items-center cursor-pointer"
-                >
+                <label className="relative inline-flex items-center cursor-pointer">
                   <input
                     type="checkbox"
                     className="cursor-pointer sr-only peer"
                     checked={darkMode}
                     onChange={toggleDarkMode}
+                    aria-label="Toggle dark mode"
                   />
                   <div className="w-14 h-7 bg-[#00C2CB] rounded-full peer-checked:bg-pink-500 peer transition-all duration-300"></div>
                   <span className="absolute left-2 top-1 w-5 h-5 bg-white rounded-full transition-transform duration-300 peer-checked:translate-x-5"></span>

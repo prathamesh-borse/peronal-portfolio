@@ -50,6 +50,7 @@ const MyProjects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cursor-pointer text-white p-1 rounded-full transition-all duration-300 hover:opacity-70 mb-1"
+                      aria-label="Personal Portfolio Project"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -64,6 +65,7 @@ const MyProjects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cursor-pointer text-white p-1 rounded-full transition-all duration-300 hover:opacity-70"
+                      aria-label="GitHub Repository for Personal Portfolio Project"
                     >
                       <Image
                         src="/assets/github-icon.svg"
@@ -125,6 +127,7 @@ const MyProjects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cursor-pointer text-white p-1 rounded-full transition-all duration-300 hover:opacity-70 mb-1"
+                      aria-label="Library Management System Project"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -139,6 +142,7 @@ const MyProjects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className=" cursor-pointer text-white p-1 rounded-full transition-all duration-300 hover:opacity-70"
+                      aria-label="GitHub Repository for Library Management System Project"
                     >
                       <Image
                         src="/assets/github-icon.svg"
@@ -199,6 +203,7 @@ const MyProjects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cursor-pointer text-white p-1 rounded-full transition-all duration-300 hover:opacity-70 mb-1"
+                      aria-label="AI Resume Analyser Project"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -213,6 +218,7 @@ const MyProjects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className=" cursor-pointer text-white p-1 rounded-full transition-all duration-300 hover:opacity-70"
+                      aria-label="GitHub Repository for AI Resume Analyser Project"
                     >
                       <Image
                         src="/assets/github-icon.svg"
@@ -276,6 +282,7 @@ const MyProjects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cursor-pointer text-white p-1 rounded-full transition-all duration-300 hover:opacity-70 mb-1"
+                      aria-label="Gemini Chatbot Project"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -337,6 +344,7 @@ const MyProjects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cursor-pointer text-white p-1 rounded-full transition-all duration-300 hover:opacity-70 mb-1"
+                      aria-label="Simple Portfolio Project"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -351,6 +359,7 @@ const MyProjects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cursor-pointer text-white p-1 rounded-full transition-all duration-300 hover:opacity-70"
+                      aria-label="GitHub Repository for Simple Portfolio Project"
                     >
                       <Image
                         src="/assets/github-icon.svg"

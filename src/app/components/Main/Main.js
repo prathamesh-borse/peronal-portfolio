@@ -13,7 +13,6 @@ import {
   useInView,
 } from "framer-motion";
 import { Analytics } from "@vercel/analytics/next";
-import "../../globals.css";
 
 const Main = () => {
   const ref = useRef(null);

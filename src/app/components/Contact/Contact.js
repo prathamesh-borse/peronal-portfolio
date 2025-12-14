@@ -70,7 +70,7 @@ const Contact = () => {
                   <button
                     type="submit"
                     disabled={state.submitting}
-                    className="w-48 px-6 py-3 bg-[#00c2cb] text-white font-medium rounded-full hover:opacity-80 transition duration-300 mx-auto"
+                    className="w-48 px-6 py-3 bg-[#00c2cb] font-medium rounded-full hover:opacity-80 transition duration-300 mx-auto text-contrast"
                   >
                     {state.submitting ? "Sending..." : "Submit"}
                   </button>

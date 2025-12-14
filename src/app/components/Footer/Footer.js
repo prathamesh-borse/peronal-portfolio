@@ -16,6 +16,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white rounded-full transition-all duration-300 hover:opacity-70"
+              aria-label="Portfolio Website"
             >
               prathameshdev.vercel.app
             </a>
@@ -27,6 +28,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white rounded-full transition-all duration-300 hover:opacity-70"
+              aria-label="GitHub Profile"
             >
               <FaGithub size={28} />
             </a>
@@ -37,6 +39,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white rounded-lg transition-all duration-300 hover:opacity-70"
+              aria-label="LinkedIn Profile"
             >
               <Image
                 src="/assets/linkedin.svg"
@@ -52,6 +55,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white rounded-full transition-all duration-300 hover:opacity-70"
+              aria-label="Twitter Profile"
             >
               <Image
                 src="/assets/twitter-icon.webp"
@@ -67,6 +71,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="mediumIcon text-white p-1 rounded-lg transition-all duration-300 hover:opacity-70 medium-icon"
+              aria-label="Medium Profile"
             >
               <Image
                 src="/assets/medium-icon.svg"
